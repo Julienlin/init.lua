@@ -2,9 +2,7 @@
 function ColorMyPencils(color)
 	color = color or "rose-pine"
 
-	require("rose-pine").setup({
-		variant = 'dawn'
-	})
+	require("rose-pine").setup({})
 
 	-- Set colorscheme after options
 	vim.cmd.colorscheme(color)
@@ -12,7 +10,7 @@ function ColorMyPencils(color)
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"})
 
-end 
+end
 
 ColorMyPencils()
 
